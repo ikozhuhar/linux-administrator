@@ -6,41 +6,31 @@
     - name: Install multiple program
       become: true
       apt: name={{ item }} state=latest
-      loop: [vim, traceroute, net-tools, tcpdump, git, wget, curl]
+      loop: [vim, traceroute, net-tools, tcpdump, git, wget, curl, unzip]
 
-    - name: Ping my hosts
-      ansible.builtin.ping:
-
-    - name: Print message
-      ansible.builtin.debug:
-        msg: Hello World
-
-    - name: Visual code pkg
+    - name: Copy files
       ansible.builtin.copy:
-        src: /home/ubuntu/code_1.92.2-1723660989_amd64.deb
+        src: /home/ubuntu/pkg/
         dest: /home/ubuntu
 
-#  - name: Copy Linux Core
-#    ansible.builtin.copy:
-#      src: /home/ubuntu/core/
-#      dest: /home/ubuntu
+    - name: Install packages 1
+      apt:
+        deb: /home/ubuntu/code_1.92.2-1723660989_amd64.deb
 
-#  - name: Install a .deb package core 1
-#    apt:
-#      deb: /home/ubuntu/linux-headers-6.6.9-060609_6.6.9-060609.202401011332_all.deb
-#    become: true
+    - name: Install packages 2
+      apt:
+        deb: /home/ubuntu/linux-headers-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb
 
-#  - name: Install a .deb package core 2
-#    apt:
-#      deb: /home/ubuntu/linux-headers-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
-#    become: true
+    - name: Install packages 3
+      apt:
+        deb: /home/ubuntu/linux-headers-6.9.0-060900_6.9.0-060900.202405122134_all.deb
 
-#  - name: Install a .deb package core 3
-#    apt:
-#      deb: /home/ubuntu/linux-image-unsigned-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
-#    become: true
+    - name: Install packages 4
+      apt:
+        deb: /home/ubuntu/linux-image-unsigned-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb
 
-#  - name: Install a .deb package core 4
-#    apt:
-#      deb: /home/ubuntu/linux-modules-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
-#    become: true
+    - name: Install packages 5
+      apt:
+        deb: /home/ubuntu/linux-modules-6.9.0-060900-generic_6.9.0-060900.202405122134_amd64.deb
+
+
