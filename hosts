@@ -1,28 +1,3 @@
-# EXAMPLE
-
-# Все хосты из инвентори файла. В инвентори файле хосты можно разделять на группы. 
-#[group1]
-#172.17.148.115 ansible_user=ubuntu ansible_ssh_private_key_file=/home/ubuntu/.ssh/id_rsa
-#172.17.148.126 ansible_user=ubuntu
-#
-#[group2]
-#172.17.148.248 ansible_user=ubuntu ansible_password=123
-#172.17.148.220 ansible_user=ubuntu ansible_password=123
-#
-#
-# Example command
-#ansible all -m ping
-# Указанием файла инвентори
-#ansible all -i /etc/ansible/hosts -m ping
-# С указанием коткретного хоста
-#ansible 172.17.148.248 -i /etc/ansible/hosts -m ping
-
-
-
-
-
-
-
 
 # This is the default ansible 'hosts' file.
 #
@@ -55,45 +30,8 @@
 #172.17.148.126 ansible_user=ubuntu
 #172.17.148.248 ansible_user=ubuntu ansible_password=123
 #172.17.148.220 ansible_user=ubuntu ansible_password=123
-
-
-
-
-# Другой вариант
-#st1 ansible_host=172.17.148.252          
+        
 st2 ansible_host=172.17.148.115
 st3 ansible_host=172.17.148.126
 st4 ansible_host=172.17.148.248
 st5 ansible_host=172.17.148.220
-
-
-
-# If you have multiple hosts following a pattern, you can specify
-# them like this:
-
-## www[001:006].example.com
-
-# You can also use ranges for multiple hosts: 
-
-## db-[99:101]-node.example.com
-
-# Ex 3: A collection of database servers in the 'dbservers' group:
-
-## [dbservers]
-##
-## db01.intranet.mydomain.net
-## db02.intranet.mydomain.net
-## 10.25.1.56
-## 10.25.1.57
-
-
-# Ex4: Multiple hosts arranged into groups such as 'Debian' and 'openSUSE':
-
-## [Debian]
-## alpha.example.org
-## beta.example.org
-
-## [openSUSE]
-## green.example.com
-## blue.example.com
-
