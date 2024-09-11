@@ -62,7 +62,11 @@
 Шаг 1: Руками добавил новую версию ядра. Для этого выполнил следующее:
 
 	1. Загрузил пакеты
-	wget -c https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-headers-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb \\ https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-headers-6.6.9-060609_6.6.9-060609.202401011332_all.deb \\ https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-image-unsigned-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb \\ https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-modules-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
+	wget -c https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-headers-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
+ 	wget -c https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-headers-6.6.9-060609_6.6.9-060609.202401011332_all.deb
+  	wget -c https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-image-unsigned-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
+   	wget -c https://kernel.ubuntu.com/mainline/v6.6.9/amd64/linux-modules-6.6.9-060609-generic_6.6.9-060609.202401011332_amd64.deb
+
 Шаг 2: Установил пакеты
 
 	1. sudo dpkg -i *.deb
