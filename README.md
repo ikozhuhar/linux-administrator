@@ -1,5 +1,5 @@
 # Мои мануалы и шпаргалки
-[Обновить ядро в базовой системе](homework1_kernel)
+[Сборка ЯДРА Linux из исходников](homework1_kernel)
 
 [Установка и запуск Vagrant](homework2_vagrant)
 
