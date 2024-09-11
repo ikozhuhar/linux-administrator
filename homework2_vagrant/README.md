@@ -7,7 +7,7 @@
 # https://developer.hashicorp.com/vagrant/install?product_intent=vagrant
 # https://hashicorp-releases.yandexcloud.net/vagrant/
 # https://help.ubuntu.ru/wiki/vagrant 
-# sudo dpkg -i vagrant_2.4.1-1_amd64.deb
+# $ sudo dpkg -i vagrant_2.4.1-1_amd64.deb
 
 $mach_quant = 10
 
