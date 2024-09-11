@@ -6,4 +6,4 @@
 
 [Первые шаги с Ansible](homework3_ansible)
 
-[mdadm - управление программным RAID-массивом в Linux](homework4_mdadm)
+[mdadm - управление программным RAID-массивом](homework4_mdadm)
