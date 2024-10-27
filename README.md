@@ -21,3 +21,4 @@
 2. [Установка и запуск Vagrant](homework2_vagrant)
 3. [Первые шаги с Ansible](homework3_ansible)
 4. [mdadm - управление программным RAID-массивом](homework4_mdadm)
+5. [Linux - по русски](https://rus-linux.net/MyLDP/hard/manage_disk_partitions_with_fdisk.html)
