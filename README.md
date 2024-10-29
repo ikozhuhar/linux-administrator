@@ -23,7 +23,8 @@
 4. [mdadm - управление программным RAID-массивом](homework4_mdadm)
 5. [Linux - по русски](https://rus-linux.net)
 
-Ищем конфиг ПО
+
+### Ищем конфиг ПО
 ```
 ps -efl | grep prom
 /usr/bin/prometheus --help | grep config
