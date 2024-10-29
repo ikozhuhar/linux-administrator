@@ -22,3 +22,10 @@
 3. [Первые шаги с Ansible](homework3_ansible)
 4. [mdadm - управление программным RAID-массивом](homework4_mdadm)
 5. [Linux - по русски](https://rus-linux.net)
+
+Ищем конфиг ПО
+```
+ps -efl | grep prom
+/usr/bin/prometheus --help | grep config
+/usr/bin/prometheus --help 2>&1 >/dev/null | grep config
+```
